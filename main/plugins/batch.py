@@ -24,7 +24,7 @@ from ethon.telefunc import force_sub
 
 ft = f"To use this bot you've to join @{fs}."
 
-batch = [1000]
+batch = []
 
 @Drone.on(events.NewMessage(incoming=True, from_users=AUTH, pattern='/cancel'))
 async def cancel(event):
